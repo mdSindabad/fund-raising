@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Jeff Bezos",
+        "age": 57,
+        "country": "USA",
+        "net_worth": 177000000000,
+        "organization": "Amazon",
+        "donate": 177000,
+        "image": "./images/jeff_bezos.jpg"
+    },
+    {
+        "name": "Elon Musk",
+        "age": 50,
+        "country": "USA",
+        "net_worth": 151000000000,
+        "organization": "Tesla",
+        "donate": 151000,
+        "image": "./images/elon_musk.jpg"
+    },
+    {
+        "name": "Bernard Arnault",
+        "age": 72,
+        "country": "France",
+        "net_worth": 150000000000,
+        "organization": "LVMH",
+        "donate": 150000,
+        "image": "./images/bernand_arnault.jpg"
+    },
+    {
+        "name": "Bill Gates",
+        "age": 65,
+        "country": "USA",
+        "net_worth": 124000000000,
+        "organization": "Microsoft",
+        "donate": 124000,
+        "image": "./images/bill_gates.jpg"
+    },
+    {
+        "name": "Mark Zuckerberg",
+        "age": 37,
+        "country": "USA",
+        "net_worth": 97000000000,
+        "organization": "Facebook",
+        "donate": 97000,
+        "image": "./images/mark_zukerberg.jpg"
+    },
+    {
+        "name": "Warren Buffett",
+        "age": 91,
+        "country": "USA",
+        "net_worth": 96000000000,
+        "organization": "Berkshire Hathaway",
+        "donate": 96000,
+        "image": "./images/warren_buffet.jpg"
+    }
+]
