@@ -4,9 +4,9 @@ import { FaCartPlus, FaTwitterSquare, FaFacebookSquare } from 'react-icons/fa';
 const Card = ({ person }) => {
     const { name, age, country, organisation, net_worth, image, donate } = person;
     return (
-        <div className='border-2 py-2 px-3 rounded bg-gray-200 shadow-lg'>
-            <div>
-                <img src={image} alt={name} />
+        <div className='border-2 py-2 px-3 rounded-lg bg-purple-200 shadow-lg transform transition hover:scale-105'>
+            <div className='h-32 w-32 rounded-full overflow-hidden mx-auto mb-2'>
+                <img className='w-full h-full object-cover' src={image} alt={name} />
             </div>
             <div>
                 <h3><b>Name: </b>{name}</h3>

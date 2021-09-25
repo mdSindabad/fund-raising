@@ -6,7 +6,7 @@
         "net_worth": 177000000000,
         "organization": "Amazon",
         "donate": 177000,
-        "image": "./images/jeff_bezos.jpg"
+        "image": "./images/jeff_bezos.png"
     },
     {
         "name": "Elon Musk",
@@ -15,7 +15,7 @@
         "net_worth": 151000000000,
         "organization": "Tesla",
         "donate": 151000,
-        "image": "./images/elon_musk.jpg"
+        "image": "./images/elon_musk.jpeg"
     },
     {
         "name": "Bernard Arnault",
@@ -24,7 +24,7 @@
         "net_worth": 150000000000,
         "organization": "LVMH",
         "donate": 150000,
-        "image": "./images/bernand_arnault.jpg"
+        "image": "./images/bernard_arnault.jpg"
     },
     {
         "name": "Bill Gates",
@@ -33,7 +33,7 @@
         "net_worth": 124000000000,
         "organization": "Microsoft",
         "donate": 124000,
-        "image": "./images/bill_gates.jpg"
+        "image": "./images/bill_gates.jpeg"
     },
     {
         "name": "Mark Zuckerberg",
@@ -42,7 +42,7 @@
         "net_worth": 97000000000,
         "organization": "Facebook",
         "donate": 97000,
-        "image": "./images/mark_zukerberg.jpg"
+        "image": "./images/mark_zuckerberg.jpeg"
     },
     {
         "name": "Warren Buffett",
@@ -51,6 +51,6 @@
         "net_worth": 96000000000,
         "organization": "Berkshire Hathaway",
         "donate": 96000,
-        "image": "./images/warren_buffet.jpg"
+        "image": "./images/warren_buffet.png"
     }
 ]
