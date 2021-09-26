@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import Cart from "./components/cart/Cart";
 import Container from "./components/container/Container";
+import Header from "./components/header/Header";
 import data from './data.json';
 
 function App() {
-  console.log(data)
+  const [doners, setDoners] = useState([]);
+
   return (
     <div className=''>
-      <h1 className='text-center font-bold text-3xl bg-green-200 py-3'>Fund Raising Ceremony</h1>
-      <Container data={data} />
+      <Header />
+      <div className='grid grid-cols-1 md:grid-cols-4'>
+        <Container data={data} doners={doners} setDoners={setDoners} />
+        <Cart doners={doners} />
+      </div>
     </div>
   );
 }

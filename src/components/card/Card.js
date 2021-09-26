@@ -1,10 +1,20 @@
 import React from 'react';
-import { FaCartPlus, FaTwitterSquare, FaFacebookSquare } from 'react-icons/fa';
+import { FaDonate, FaTwitterSquare, FaFacebookSquare } from 'react-icons/fa';
 
-const Card = ({ person }) => {
+const Card = ({ person, doners, setDoners }) => {
+
+    const handleClick = (person) => {
+        const isDonated = doners.findIndex(item => item.name === person.name);
+        if (isDonated >= 0) {
+            alert(`${person.name} has already been donate`)
+        } else {
+            setDoners(prevDoners => [...prevDoners, person])
+        }
+    };
+
     const { name, age, country, organisation, net_worth, image, donate } = person;
     return (
-        <div className='border-2 py-2 px-3 rounded-lg bg-purple-200 shadow-lg transform transition hover:scale-105'>
+        <div className='border-2 py-2 px-3 rounded-lg bg-purple-200 shadow-lg transform transition lg:hover:scale-105'>
             <div className='h-32 w-32 rounded-full overflow-hidden mx-auto mb-2'>
                 <img className='w-full h-full object-cover' src={image} alt={name} />
             </div>
@@ -17,9 +27,9 @@ const Card = ({ person }) => {
                 <h3><b>Donation: </b>{donate}</h3>
             </div>
             <div className='flex justify-center my-3'>
-                <button className='flex items-center border-2 text-green-700 border-green-700 py-0.5 px-2 rounded-full hover:bg-green-700 hover:text-gray-200'>
-                    <FaCartPlus className='mr-2' />
-                    Add To Cart</button>
+                <button className='flex items-center border-2 text-green-700 border-green-700 py-0.5 px-2 rounded-full hover:bg-green-700 hover:text-gray-200' onClick={() => handleClick(person)}>
+                    <FaDonate className='mr-2' />
+                    Donate</button>
             </div>
             <div className='flex justify-center text-3xl text-green-500 '>
                 <FaFacebookSquare className='hover:text-green-700 cursor-pointer mx-1' />
