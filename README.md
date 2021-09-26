@@ -4,6 +4,6 @@ This is a single page react app which collect donation from world's top billioni
 
 ## Tech used
 
-React, Tailwind CSS
+React, Tailwind CSS, React icons, etc.
 
 
