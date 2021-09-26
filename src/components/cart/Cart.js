@@ -10,7 +10,7 @@ const Cart = ({ doners, setDoners }) => {
 
     return (
         <div className='col-span-1 order-1 '>
-            <div className='bg-blue-200 m-5 px-3 py-8 rounded-lg text-center md:order-2'>
+            <div className='bg-blue-200 m-5 px-3 py-8 rounded-lg text-center md:order-2 shadow-lg'>
 
                 <h2 className='text-xl font-bold border-b-2 border-blue-400 mb-3'>Donation</h2>
                 <p className='font-bold text-gray-600 mb-2'>No of person donated: <span className='text-gray-800'>{doners.length}</span></p>

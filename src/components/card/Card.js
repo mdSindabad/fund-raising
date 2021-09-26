@@ -6,7 +6,7 @@ const Card = ({ person, doners, setDoners }) => {
     const handleClick = (person) => {
         const isDonated = doners.findIndex(item => item.name === person.name);
         if (isDonated >= 0) {
-            alert(`${person.name} has already been donate`)
+            alert(`${person.name} has already donated.`)
         } else {
             setDoners(prevDoners => [...prevDoners, person])
         }
